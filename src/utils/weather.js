@@ -13,7 +13,7 @@ const getWeather = (address, callback) => {
             callback(`unable to find location. Try again...`)
         }
         else {
-            const str = `Temprature at ${body.location.name}, ${body.location.region}, ${body.location.country} is ${body.current.temp_c} degree but feels like ${body.current.feelslike_c}.`
+            const str = `TTTemprature at ${body.location.name}, ${body.location.region}, ${body.location.country} is ${body.current.temp_c} degree but feels like ${body.current.feelslike_c}.`
             callback(undefined, str);
         }
     })
