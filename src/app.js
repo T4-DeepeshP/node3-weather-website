@@ -54,9 +54,7 @@ app.get('/weather', (req, res) => {
             });
         }
         else {
-            res.send({
-                forcast: response
-            });
+            res.send(response);
         }
     })
 })
